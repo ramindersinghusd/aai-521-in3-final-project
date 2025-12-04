@@ -38,7 +38,6 @@ hand-gesture-project/
 ├── aai_521_in3_final_project_Hand_Gesture_Detection.pdf        # pdf export of ipynb
 ├── aai_521_in3_final_project_presentation_video.mp4            # final presentation
 ```
-
 ---
 
 ## 🎯 5 Supported Gestures
@@ -53,9 +52,6 @@ hand-gesture-project/
 
 ---
 
-
----
-
 ## 🚀 Quick Start
 
 ### 1. **Setup Environment**
@@ -66,10 +62,11 @@ pip install opencv-python mediapipe scikit-learn numpy pandas matplotlib seaborn
 ### 2. **Download Dataset**
 - Dataset: [Hand Gesture Recognition Dataset on Kaggle](https://www.kaggle.com/gti-upm/leapgestrecog)
 - Extract images into respective gesture folders in `data/` directory
+- Since dataset size was ~1.2GB, this was manually downloaded as zip and few files were used to move to /data folder.
 
 ### 3. **Run the Notebook**
 ```bash
-jupyter notebook Hand_Gesture_Detection.ipynb
+jupyter notebook aai_521_in3_final_project_Hand_Gesture_Detection.ipynb
 ```
 
 ### 4. **Run All Cells**
@@ -187,7 +184,6 @@ Feature Vector (290D)
     ↓
 Gesture Prediction (with confidence)
 ```
-
 ---
 
 ## 📈 Key Features
@@ -278,7 +274,6 @@ run_webcam_gesture_detection(model, duration_seconds=30)
 | 10-13 | Summary & save | Model | Saved model |
 
 ---
----
 
 ## 🛠️ Tech Stack
 
@@ -289,8 +284,6 @@ run_webcam_gesture_detection(model, duration_seconds=30)
 | **Scikit-learn** | Classification |
 | **NumPy/Pandas** | Data handling |
 | **Matplotlib** | Visualization |
-
----
 
 ---
 
@@ -359,8 +352,6 @@ After completing this project, you will understand:
 6. **Mobile Deployment**: Convert to TensorFlow Lite
 7. **Web Interface**: Create Flask/Django web app
 8. **API Service**: Deploy as REST API
-
----
 ---
 
 ## 🐛 Common Issues & Solutions
@@ -374,17 +365,6 @@ After completing this project, you will understand:
 | Memory error | Reduce batch size or feature dimensions |
 
 ---
-
-## 📝 Dataset Sources
-
-- **Kaggle**: [Hand Gesture Recognition Dataset](https://www.kaggle.com/gti-upm/leapgestrecog)
-- **UCI ML Repository**: [Hand Gesture Recognition Database](https://archive.ics.uci.edu/ml/datasets/hand)
-- **GitHub**: Various hand gesture datasets
-
----
-
----
-
 ## 🔗 External Resources
 
 ### Official Documentation
@@ -394,15 +374,14 @@ After completing this project, you will understand:
 - NumPy: https://numpy.org/
 - Pandas: https://pandas.pydata.org/
 
-### Datasets
-- Kaggle: https://www.kaggle.com/
-- UCI ML: https://archive.ics.uci.edu/ml/
+### Dataset Sources
+- Kaggle - Hand Gesture Recognition Dataset: https://www.kaggle.com/
+- UCI ML Repository - Hand Gesture Recognition Database: https://archive.ics.uci.edu/ml/
 
 ### Learning Resources
 - OpenCV Tutorials: https://docs.opencv.org/
 - Scikit-learn Guide: https://scikit-learn.org/stable/
 
 ---
-
 
 **Happy Gesture Detecting! 👋👍✊**
