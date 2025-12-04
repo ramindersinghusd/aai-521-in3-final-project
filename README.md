@@ -206,6 +206,14 @@ Gesture Prediction (with confidence)
 - Confidence-based filtering
 - Visual feedback with landmarks
 
+
+### Sample Gestures detected
+![Palm Detected](./detected_gestures/Palm_0.60_20251204_140648_824.jpg)
+![Ok-Sign detected](./detected_gestures/OK_Sign_0.60_20251204_140320_727.jpg)
+![Fist detected](./detected_gestures/Fist_0.70_20251204_140909_612.jpg)
+
+### Sample predictions from dataset
+![Sample predictions](./sample_predictions.png)
 ---
 
 ## 🎯 Performance Metrics
