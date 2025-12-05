@@ -155,6 +155,23 @@ Display Results on Screen
 Optional: Trigger Action
 ```
 ---
+## 🎓 What Each Phase Does
+
+| Phase | Purpose | Input | Output |
+|-------|---------|-------|--------|
+| 0 | Setup dependencies | - | Installed packages |
+| 1 | Explore dataset | Images | Dataset stats |
+| 2 | Detect hands | Images | Landmarks |
+| 3 | Extract features | Landmarks | Feature vectors |
+| 4 | Prepare data | Images | Train/test sets |
+| 5 | Train model | Features | Trained classifier |
+| 6 | Evaluate | Predictions | Accuracy metrics |
+| 7 | Visualize | Results | Confusion matrix |
+| 8 | Analyze features | Model | Importance plot |
+| 9 | Real-time test | Webcam | Live predictions |
+| 10-13 | Summary & save | Model | Saved model |
+
+---
 
 ## 🤖 Machine Learning Model
 
@@ -262,40 +279,9 @@ run_webcam_gesture_detection(model, duration_seconds=30)
 
 # Press 'q' to exit
 ```
-
 ---
 
-## 🎓 What Each Phase Does
-
-| Phase | Purpose | Input | Output |
-|-------|---------|-------|--------|
-| 0 | Setup dependencies | - | Installed packages |
-| 1 | Explore dataset | Images | Dataset stats |
-| 2 | Detect hands | Images | Landmarks |
-| 3 | Extract features | Landmarks | Feature vectors |
-| 4 | Prepare data | Images | Train/test sets |
-| 5 | Train model | Features | Trained classifier |
-| 6 | Evaluate | Predictions | Accuracy metrics |
-| 7 | Visualize | Results | Confusion matrix |
-| 8 | Analyze features | Model | Importance plot |
-| 9 | Real-time test | Webcam | Live predictions |
-| 10-13 | Summary & save | Model | Saved model |
-
----
-
-## 🛠️ Tech Stack
-
-| Tech | Purpose |
-|------|---------|
-| **MediaPipe** | Hand detection |
-| **OpenCV** | Image processing |
-| **Scikit-learn** | Classification |
-| **NumPy/Pandas** | Data handling |
-| **Matplotlib** | Visualization |
-
----
-
-## 📚 Libraries Used
+## 📚 Tech Stack / Libraries Used
 
 | Library | Purpose |
 |---------|---------|
