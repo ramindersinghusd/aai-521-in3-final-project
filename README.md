@@ -1,5 +1,7 @@
 # aai-521-in3-final-project
 # Hand Gesture Detection 
+# Team member: RaminderSingh@sandiego.edu
+# Date: 4th Dec 2025
 
 ## 📋 Project Overview
 
@@ -157,7 +159,6 @@ Display Results on Screen
   ↓
 Optional: Trigger Action
 ```
----
 ## 🎓 What Each Phase Does
 
 | Phase | Purpose | Input | Output |
