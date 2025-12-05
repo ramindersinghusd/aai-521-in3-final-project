@@ -93,6 +93,8 @@ Execute all cells in the notebook to:
 - Visualize landmarks on images
 - Extremely fast (30+ FPS on CPU)
 
+Details: This phase leverages Google MediaPipe Hands, a state-of-the-art hand detection framework that identifies 21 key hand landmarks including the wrist, palm points, and finger joint positions with high precision and speed. MediaPipe processes each image to extract the hand skeleton, capturing critical anatomical points that represent hand structure and pose. The approach is exceptionally fast, achieving 30+ FPS on CPU without requiring extensive computational resources, making it ideal for real-time applications. Each landmark is normalized to scale and position invariance, ensuring robust detection across diverse hand sizes, orientations, and distances from the camera. These extracted landmarks form the foundation for subsequent feature engineering, providing a rich representation of hand geometry that can be used to distinguish between different gestures.
+
 ### Phase 3: Feature Engineering
 - Compute landmark coordinates - 21 normalized
 - Calculate distances between landmarks
@@ -102,6 +104,8 @@ Execute all cells in the notebook to:
 **Output Format**:
 - Feature vector size: 42-100 dimensions (depending on features used)
 - Each gesture represented as a fixed-size feature vector
+
+Details: Feature engineering transforms raw landmark coordinates into meaningful numeric features that capture hand gesture characteristics through multiple computational approaches. The process includes computing landmark coordinates (21 normalized points), calculating geometric distances between key landmarks, and deriving angular relationships between finger segments to represent finger curvature and palm orientation. These computations generate a high-dimensional feature vector of approximately 290 dimensions that encodes spatial and structural information about the hand. The engineered features are designed to be invariant to scale and minor positional variations while capturing gesture-specific patterns that distinguish between Palm, Fist, Thumbs Up, Pointing, and OK Sign gestures. This compact, fixed-size representation enables efficient machine learning model training while preserving the discriminative information necessary for accurate gesture classification.
 
 ### Phase 4: Data Preparation
 - Split dataset (70% train, Validation (15%), Test (15%))
