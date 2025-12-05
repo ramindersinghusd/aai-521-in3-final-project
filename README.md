@@ -17,26 +17,25 @@ This is a comprehensive Hand Gesture Detection system using computer vision. The
 ```
 hand-gesture-project/
 ├── aai_521_in3_final_project_Hand_Gesture_Detection.ipynb      # Main notebook 
-├── README.md                         # This file
-├── setup_dataset.py                  # Dataset setup script
-├── data/                             # Dataset directory
+├── README.md                                               # This file
+├── setup_dataset.py                                        # Dataset setup script
+├── data/                                                   # Dataset directory
 │   ├── Palm/
 │   ├── Fist/
 │   ├── Thumbs_Up/
 │   ├── Pointing/
 │   ├── OK_Sign/
-│   └── README.md
-├── models/                                       # Trained models storage
-│   └── gesture_classifier.pkl                    # Trained Random Forest model
-├── detected_gestures/                            # webcam detection results storage
-│   └── Fist_0.70_20251204_140909_612.jpg         # webcam - fist detection
-│   └── OK_Sign_0.60_20251204_140320_727.jpg      # webcam - Ok_Sign via hands
-│   └── Palm_0.60_20251204_140648_824.jpg         # webcam - Palm detected
-├── confusion_matrix.png                          # Model evaluation visualization
-├── feature_importance.png                        # Feature analysis
-├── sample_predictions.png                        # Test predictions
-├── aai_521_in3_final_project_Hand_Gesture_Detection.pdf        # pdf export of ipynb
-├── aai_521_in3_final_project_presentation_video.mp4            # final presentation
+├── models/                                                   # Trained models storage
+│   └── gesture_classifier.pkl                                # Trained Random Forest model
+├── detected_gestures/                                        # webcam detection results storage
+│   └── Fist_0.70_20251204_140909_612.jpg                     # webcam - fist detection
+│   └── OK_Sign_0.60_20251204_140320_727.jpg                  # webcam - Ok_Sign via hands
+│   └── Palm_0.60_20251204_140648_824.jpg                     # webcam - Palm detected
+├── confusion_matrix.png                                      # Model evaluation visualization
+├── feature_importance.png                                    # Feature analysis
+├── sample_predictions.png                                    # Test predictions
+├── aai_521_in3_final_project_Hand_Gesture_Detection.pdf      # pdf export of ipynb
+├── aai_521_in3_final_project_presentation_video.mp4          # final presentation
 ```
 ---
 
